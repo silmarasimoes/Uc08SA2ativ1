@@ -1,0 +1,93 @@
+
+h1 {
+    background-color:rgb(7, 1, 14);
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+#linha1{
+    background-color: blueviolet;
+}
+
+body .tabela .primeira-linha{
+
+    background-color: pink;
+    text-align: center;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.tabela .dados {
+    text-align: center;
+    background-color: pink;  
+}
+
+.tabela .primeira-linha td, .tabela .dados td {
+    border: 1px solid black ;
+}
+
+
+/* RESPONSIVE */ 
+@media only screen and (min-width: 500px) {
+    .tabela {
+            flex-direction: row;
+            justify-content: space-around;
+            width:40%;
+        }
+    
+        .h1{
+            width:40%;
+            text-align: center;
+        }
+
+        .dados {
+            width:10%;
+        }
+    }
+
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    .tabela{
+        flex-direction: row;
+        justify-content: space-around;
+        width:70%;
+        
+        
+    }
+
+    .h1{
+        width:70%;  
+        align-items: center;   
+        
+    }
+
+    .dados {
+        width:400px;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    
+    .tabela{
+        flex-direction: row;
+        justify-content: space-around;
+        width:100%;
+        
+    }
+
+    .h1{
+        width:100%;
+        
+    }
+
+    .dados {
+        width:100%;
+    }
+}
+
+
